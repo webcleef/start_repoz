@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Jura';
+  src: url('../fonts/jura-v7-cyrillic_latin-regular.woff2') format('woff2'),
+       url('../fonts/jura-v7-cyrillic_latin-regular.woff') format('woff');
+   font-style: normal;
+   font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu-v9-cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/ubuntu-v9-cyrillic-regular.woff') format('woff');
+   font-style: normal;
+   font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu-v9-cyrillic-500.woff2') format('woff2'),
+       url('../fonts/ubuntu-v9-cyrillic-500.woff') format('woff');
+   font-style: normal;
+   font-weight: 500;
+}
+// @font-face {
+//   font-family: 'Nord';
+//   src: url('../fonts/nord_regular-webfont.woff2') format('woff2'),
+//        url('../fonts/nord_regular-webfont.woff') format('woff');
+//    font-style: normal;
+//    font-weight: 500;
+// }
+// @font-face {
+//     font-family: 'nordmedium';
+//     src: url('../fonts/nordmedium-webfont.woff2') format('woff2'),
+//          url('../fonts/nordmedium-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+@font-face {
+    font-family: 'Nord-Medium';
+    src: url('../fonts/Nord-Medium.woff2') format('woff2'),
+         url('../fonts/Nord-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

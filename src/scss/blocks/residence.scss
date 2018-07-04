@@ -1,0 +1,109 @@
+.residence {
+  &__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 27px;
+    max-width: 1200px;
+    margin: 0 auto;
+      @media (min-width: $screen-lg) {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+  }
+  &__title {
+    margin: 0;
+    font-family: 'Jura';
+    font-size: 20px;
+    color: #4d4b5c;
+      @media (min-width: $screen-lg) {
+        font-size: 30px;
+      }
+  }
+  .residence-tabs {
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+        @media (min-width: $screen-xs) {
+          flex-direction: column;
+        }
+        @media (min-width: $screen-sm) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+    }
+    &__regions {
+      font-family: 'Jura';
+      color: #191c3f;
+      font-size: 12px;
+      position: relative;
+      cursor: pointer;
+        &--active {
+          color: #89c1a1;
+          &:after {
+            transform: rotate(90deg);
+          }
+        }
+        &:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          @include sprite($residence-marker);
+          top: 25%;
+          margin-left: 14px;
+
+        }
+        @media (min-width: $screen-xs) {
+          margin-top: 33px;
+          font-size: 14px;
+        }
+        @media (min-width: $screen-sm) {
+          padding-right: 33px;
+          font-size: 20px;
+        }
+      &-link {
+        font-size: 12px;
+        color: #201c38;
+        font-family: 'Ubuntu';
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 50px;
+          @media (min-width: $screen-lg) {
+            font-size: 16px;
+          }
+      }
+    }
+
+    &__content {
+      margin-top: 20px;
+        @media (min-width: $screen-sm) {
+          width: 66%;
+        }
+    }
+    &__item {
+        width: 100%;
+        text-align:center;
+        border: 1px solid #d0d0d0;
+        border-collapse: collapse;
+    }
+  }
+  .residence-tabs__item th {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    padding: 25px 0;
+    border: 1px solid #d0d0d0;
+  }
+.residence-tabs__item td {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 10px;
+  padding: 25px 0;
+  border: 1px solid #d0d0d0;
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+    }
+
+}
+}
